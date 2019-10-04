@@ -26,7 +26,13 @@ During your challenge, you will be pulled aside by a PM for a 5 minute interview
 
 Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+  - Accessing an array has a constant time or O(1)
+  - Add to front is linear time or O(n)
+  - Remove from front is linear time or O(n)
+  - Add to back is constant time or O(1)
+  - Remove from back is linear time or O(n)
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
+  - It would take linear time or O(n) to copy all of the previous elements in the array. The size of the new array would be 2n where n is the previous number of elements.
 
 Explain how blockchain networks remain in consensus:
 * What does a node do if it gets a message from another in the network with a new block?
@@ -58,7 +64,7 @@ Your goal is to mine at least one coin.  Keep in mind that with many people comp
 ### Rubric
 
 | *OBJECTIVE*                                                                                                     | *TASK*             | *1 - DOES NOT MEET EXPECTATIONS*                                                                                            | *2 - MEETS EXPECTATIONS*                                                                                                       | *3 - EXCEEDS EXPECTATIONS                                                                                                                             |
-|-----------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | implement and describe how high-level array functions work down to the memory level                             | Interview Question | If you were evaluating this candidate for a position with your company, your would object to them being added to your team. | If you were evaluating this candidate for a position with your company, you would be pleased to have this person on your team. | If you were evaluating this candidate for a position with your company, you would go out of your way to make sure this person is hired for your team. |
 | implement and utilize basic hash table + handle collisions and resizing in a hash table                         | Hash Problem 1 & 2 | Tests do not pass on one or both problems, or solutions do not use hash tables.                                             | Tests pass on both problems.  Solution utilizes a hash table.                                                                  | Tests pass on on both problems with solutions utilizing hash tables, linear runtime complexity, no flake8 complaints.                                 |
 | diagram and code a simple blockchain, utilizing a cryptographic hash                                            | Interview Question | If you were evaluating this candidate for a position with your company, your would object to them being added to your team. | If you were evaluating this candidate for a position with your company, you would be pleased to have this person on your team. | If you were evaluating this candidate for a position with your company, you would go out of your way to make sure this person is hired for your team. |
