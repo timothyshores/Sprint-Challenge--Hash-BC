@@ -7,12 +7,25 @@ from hashtables import (HashTable,
 
 
 def get_indices_of_item_weights(weights, length, limit):
+    # instantiate Hashtable object with a capacity of 16
     ht = HashTable(16)
 
-    """
-    YOUR CODE HERE
-    """
-
+    # iterate through weights list
+    for index, item in enumerate(weights):
+        # set variable match to the difference between the weight limit and the current item's weight
+        match = hash_table_retrieve(ht, limit - item)
+        # if the sum of the weights of both items equals the weight limit
+        if match is not None:
+            # if index is larger than match
+            if index > match:
+                # return the higher value in the 0th index
+                return (index, match)
+            # else match is larger than index, no need to swap
+            return (match, index)
+        else:
+            hash_table_insert(ht, item, index)
+    
+    # there are no two items in weights who's sum is equal to the limit
     return None
 
 
