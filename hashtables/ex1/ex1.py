@@ -5,6 +5,10 @@ from hashtables import (HashTable,
                         hash_table_retrieve,
                         hash_table_resize)
 
+# This is the two sum problem 
+# https://coderbyte.com/algorithm/two-sum-problem
+# https://www.youtube.com/watch?v=8uYHAM-dtVA
+# https://www.youtube.com/watch?v=2uWRxgN1Sbo
 
 def get_indices_of_item_weights(weights, length, limit):
     # instantiate Hashtable object with a capacity of 16
