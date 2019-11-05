@@ -36,7 +36,9 @@ Explain in detail the workings of a dynamic array:
 
 Explain how blockchain networks remain in consensus:
 * What does a node do if it gets a message from another in the network with a new block?
+    - It 
 * Why can't someone cheat by changing a transaction from an earlier block to give themselves coins?
+  - The cheater will not be in conseus with the rest of the miners. 
 
 ## Project Set Up
 
